@@ -110,9 +110,11 @@ let game = {
             if (this.secondCard) {
                 if (this.checkMatch()) {
                     this.clearCards();
-                    if (this.checkGameOver()) {                       
-                       //Game Over
-                       gameOverCallBack()
+                    if (this.checkGameOver()) { 
+                        setTimeout(()=>{
+                            //Game Over
+                            gameOverCallBack()
+                        }, 1000);
                        
                     }
                 } else {
