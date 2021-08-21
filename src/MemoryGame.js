@@ -5,7 +5,7 @@ import game from './game/game'
 
 export default function MemoryGame(){
 
-    const [gameOver, setGameOver] = useState(false);
+    const [gameOver, setGameOver] = useState(true);
     const [cards, setCards] = useState([])
 
     useEffect(() =>{
